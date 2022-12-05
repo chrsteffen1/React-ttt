@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
-import Board from './components/board';
+import Board from './components/Board';
 
 function App() {
   const [reset, setReset] = useState(false)
@@ -10,7 +8,7 @@ function App() {
   const resetBoard = () => {
     setReset(true)
   }
-  
+
   return (
     <div className="App">
       <div className={`winner ${winner !== '' ? '' : 'shrink'}`}>
