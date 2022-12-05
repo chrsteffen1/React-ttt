@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Board from './components/Board';
+import Info from './components/Info';
 
 function App() {
   const [reset, setReset] = useState(false)
@@ -20,6 +21,7 @@ function App() {
         </button>
       </div>
       <Board reset={reset} setReset={setReset} winner={winner} setWinner={setWinner} />
+      <Info />
     </div>
   );
 }
